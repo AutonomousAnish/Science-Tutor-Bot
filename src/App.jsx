@@ -94,7 +94,7 @@ const App = () => {
 
     try {
       // NOTE: This is the critical API call to your Python backend
-      const response = await fetch('http://127.0.0.1:5000/generate', {
+      const response = await fetch('https://science-bot-backend-api.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
